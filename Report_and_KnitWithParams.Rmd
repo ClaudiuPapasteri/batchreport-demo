@@ -3,7 +3,6 @@ title: "Steak Preferences in the United States"
 subtitle: "Summary Report For the `r params$region` Region"
 author: "Author: Claudiu Papasteri"
 date: "`r format(Sys.Date(), '%d/%m/%y')`"
-# output: html_document
 output:
   rmdformats::readthedown:
     highlight: kate

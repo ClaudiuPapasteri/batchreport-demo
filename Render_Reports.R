@@ -15,8 +15,9 @@ render_report <- function(regionvar){
   outfile <- sprintf("Report_ScriptTemplate_%s.html", regionvar)
   parameters <- list(region = regionvar)
   rmarkdown::render(template,
-                    output_dir = "docs",
-                    output_file = outfile,
+                    output_dir = "docs",           # make output_dir "docs" folder
+                    output_file = outfile,   
+                    output_format = "all",         # render multiple formats specified in YAML header   
                     params = parameters)
   invisible(TRUE)
 }
